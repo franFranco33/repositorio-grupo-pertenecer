@@ -1,0 +1,63 @@
+/*sección Quiénes somos*/
+.contenedorGrid{
+   width: 90%;
+   margin: 20px auto;
+   padding: 20px;
+   display: grid;
+   grid-gap: 20px; /* Evito dar los márgenes de cada uno de los elementos html */
+   grid-template-columns: 1fr 1fr 1fr; /* Lo divido en tres columnas del mismo tamaño */
+   /* grid-template-columns: repeat(3, 1fr); Otra forma de escribir lo de arriba */
+   grid-template-rows: repeat(5, auto);
+}
+.headerGrid{
+   grid-column-start: 2; /* Le digo al header dónde iniciar y dónde terminar */
+   grid-column-end: 4;
+   height: 80px;
+
+}
+.mainGrid{
+   margin: 10px;
+   padding: 10px 10px 10px 50px;
+   color:rgb(155, 22, 155);
+   font-weight: bold;
+   font-size: 20px;
+   background: rgb(238, 216, 216);
+   grid-column-start: 1;
+   grid-column-end: 3; /* Fijarme en las reglas del grid para ver dónde quiero que termine */
+}
+.asideGrid{
+   margin: 10px;
+   padding: 10px 10px 10px 50px;
+   color:rgb(155, 22, 155);
+   font-weight: bold;
+   font-size: 18px;
+   background: rgb(238, 216, 216);
+   grid-column-start: 3;
+   grid-column-end: 4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   grid-row: span 2; /* Me toma 2 rows/filas, 
+   para no calcular los números de filas */
+   
+}
+
+.footerGrid{
+   padding: 67px;
+   text-align: center;
+   line-height: 1.7;
+   letter-spacing: 12px;
+   color: blueviolet;
+   /* background: rgb(182, 176, 176); */
+   background-image: linear-gradient(#a796fc, #95bcf7);
+
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   grid-column: span 3; /* El span pide que ocupe las tres columnas */
+
+}
+
+
+

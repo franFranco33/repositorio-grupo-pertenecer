@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/*Reseteo*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html {
+  font-family: "Anton", sans-serif;
+  background-image: none; }
+
+/*HEADER*/
+header {
+  /* background: rgb(182, 176, 176); */
+  background-image: linear-gradient(#a796fc, #95bcf7); }
+
+h1 {
+  display: inline-block;
+  border-top: solid 5px #c23cc2;
+  border-right: solid 10px #8d1a8d;
+  border-bottom: solid 7px #c23cc2;
+  border-left: solid 12px #8d1a8d;
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  color: #660666;
+  font-weight: bold;
+  font-size: 60px;
+  /* operacion */
+  letter-spacing: 1px;
+  /* operacion */ }
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap; }
+  nav li {
+    margin: 10px;
+    padding: 10px 10px 10px 50px;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    /* operacion */ }
+    nav li a:hover {
+      color: #660666;
+      font-style: normal;
+      font-size: large; }
+
+.container-fluid {
+  background-image: linear-gradient(#a796fc, #95bcf7); }
+
+/*MAIN*/
+main {
+  background-color: #fcf6ee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 26px; }
+
+.h2Subtitulo {
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  color: #8f058f;
+  font-weight: bold;
+  font-size: 40px; }
+
+.lista__ordenada {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 400px;
+  list-style-type: lower-roman;
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  border: 5px inset #c23cc2;
+  color: #8f058f;
+  font-size: 20px; }
+
+/*ASIDE*/
+.asideDelindex {
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  color: #8f058f;
+  word-spacing: 60px; }
+
+#collapseOne {
+  background-image: linear-gradient(#d7d5e6, #adcaf7); }
+
+/*FOOTER*/
+.footerDelindex {
+  padding: 67px;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 12px;
+  /*operacion*/
+  color: blueviolet;
+  background-image: linear-gradient(#a796fc, #95bcf7); }
+
+/*sección servicios*/
+.pDeservicios {
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  color: #9b169b;
+  font-size: 30px; }
+
+.divDeservicios {
+  margin: 10px;
+  padding: 10px 100px 10px 50px; }
+
+/*Tabla*/
+table {
+  margin: 50px;
+  padding: 5px;
+  border: 1px solid; }
+
+caption {
+  color: white;
+  font-style: italic; }
+
+caption, th, td {
+  background-color: rgba(243, 215, 204, 0.637);
+  border: solid 1px;
+  line-height: 1.7; }
+
+/*sección Quiénes somos*/
+.contenedorGrid {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  /* Evito dar los márgenes de cada uno de los elementos html */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Lo divido en tres columnas del mismo tamaño */
+  /* grid-template-columns: repeat(3, 1fr); Otra forma de escribir lo de arriba */
+  grid-template-rows: repeat(5, auto); }
+
+.headerGrid {
+  grid-column-start: 2;
+  /* Le digo al header dónde iniciar y dónde terminar */
+  grid-column-end: 4;
+  height: 80px; }
+
+.mainGrid {
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  color: #9b169b;
+  font-weight: bold;
+  font-size: 20px;
+  background: #eed8d8;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* Fijarme en las reglas del grid para ver dónde quiero que termine */ }
+
+.asideGrid {
+  margin: 10px;
+  padding: 10px 10px 10px 50px;
+  color: #9b169b;
+  font-weight: bold;
+  font-size: 18px;
+  background: #eed8d8;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: span 2;
+  /* Me toma 2 rows/filas, 
+   para no calcular los números de filas */ }
+
+.footerGrid {
+  padding: 67px;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 12px;
+  color: blueviolet;
+  /* background: rgb(182, 176, 176); */
+  background-image: linear-gradient(#a796fc, #95bcf7);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 3;
+  /* El span pide que ocupe las tres columnas */ }
+
+/*sección Contacto*/
+.contactoContacto {
+  border: none;
+  color: #9b169b; }
+
+.subtitulo__delcontacto {
+  color: #9b169b;
+  font-size: 20px; }
+
+.div__delformulario {
+  margin: 10px;
+  padding: 10px 10px 10px 50px; }
+
+.div__delformulario form label {
+  margin: 10px;
+  padding: 10px 10px 10px 50px; }
+
+.div__delformulario form label input {
+  margin: 10px;
+  padding: 10px 10px 10px 50px; }
+
+.divSexo {
+  margin: 10px;
+  padding: 10px 0px 10px 50px; }
+
+select {
+  padding-bottom: 10px;
+  margin: 5px;
+  padding: 0px 10px 0px 10px; }
+
+.divAceptaterminos {
+  margin: 10px;
+  padding: 10px; }

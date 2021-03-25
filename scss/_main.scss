@@ -1,0 +1,33 @@
+/*MAIN*/
+main {
+    background-color: rgb(252, 246, 238);
+    display: flex; 
+        flex-direction: row;
+        justify-content: center;
+    margin: 26px;
+    
+}
+
+.h2Subtitulo {
+    
+    margin: 10px;
+    padding: 10px 10px 10px 50px;
+    color:rgb(143, 5, 143);
+    font-weight: bold;
+    font-size: 40px;
+
+
+}
+
+.lista__ordenada {
+    display: flex;
+        flex-direction: column;
+        flex-basis: 400px;
+    list-style-type: lower-roman;
+    margin: 10px;
+    padding: 10px 10px 10px 50px;
+    border: 5px inset rgb(194, 60, 194);
+    color: rgb(143, 5, 143);
+    font-size: 20px;
+    
+} 

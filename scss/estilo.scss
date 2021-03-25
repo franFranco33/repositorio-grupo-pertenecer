@@ -1,0 +1,21 @@
+/*Reseteo*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: "Anton", sans-serif;
+    background-image:none;
+}
+
+
+@import "header";
+@import "main";
+@import "aside";
+@import "footer";
+@import "seccionservicios";
+@import "seccionquienessomos";
+@import "seccioncontacto";
+

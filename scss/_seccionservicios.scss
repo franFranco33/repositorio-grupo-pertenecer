@@ -1,0 +1,31 @@
+/*sección servicios*/
+.pDeservicios {
+    margin: 10px;
+    padding: 10px 10px 10px 50px;
+    color: rgb(155, 22, 155);
+    font-size: 30px;
+
+}
+.divDeservicios {
+    margin: 10px;
+    padding: 10px 100px 10px 50px;
+    
+}
+
+/*Tabla*/
+table {
+    margin: 50px;
+    padding: 5px;
+    border: 1px solid;
+}
+
+caption {
+    color:white;
+    font-style: italic;
+}
+
+caption, th, td {
+    background-color: rgba(243, 215, 204, 0.637);
+    border: solid 1px;
+    line-height: 1.7;
+} 
